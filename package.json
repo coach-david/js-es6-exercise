@@ -1,0 +1,14 @@
+{
+  "name": "js-es6-exercise",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://gitlab.zinderlabs.com/zl-training/js-html-css/js-es6-exercise.git",
+  "author": "David <david.vangompel@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "scripts": {
+    "test": "jest --watch --noStackTrace "
+  }
+}
