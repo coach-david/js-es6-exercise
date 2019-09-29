@@ -161,7 +161,7 @@ describe('destructuring default values', () => {
 
   it('function parameter', () => {
     function fn(name, location) {
-      // ↑ To do change function declaration
+      // ↑ To do: destructuring + add default values
       // don't change ↓
       expect(`${name} lives in ${location}`).toEqual('John lives in Belgium');
     }
@@ -173,7 +173,7 @@ describe('destructuring default values', () => {
 
   it('mix of function parameter types', () => {
     const fn = (id, [arr], { obj }) => {
-      // ↑ To do change function declaration
+      // ↑ To do: destructuring + add default values
       // don't change ↓
       expect(id).toEqual(1);
       expect(arr).toEqual(2);
@@ -182,6 +182,18 @@ describe('destructuring default values', () => {
 
     // don't change ↓
     fn(void 0, [], {});
+  });
+
+  it('function parameter depending on another parameter', () => {
+    const fn = (arr, start) => {
+      // ↑ To do: Add default value for "start" param
+
+      // don't change ↓
+      expect(start).toEqual(3);
+    };
+
+    // don't change ↓
+    fn([1, 2, 3]);
   });
 });
 
