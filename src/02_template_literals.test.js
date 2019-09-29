@@ -1,7 +1,7 @@
 // to do: Change "templateString" in every test, make use of template literals.
-// Leave the asserts unchanged.
+// Make all tests pass, leave the asserts unchanged.
 
-// 02.1: template literals
+// 02.1: template literals basics
 
 describe('template literals basics', () => {
   it('behaves as normal string', () => {
@@ -56,6 +56,8 @@ describe('template literals basics', () => {
     expect(getCssEs6(true, false)).toEqual(getCss(true, false));
   });
 });
+
+// 02.2: template literals multiline
 
 describe('template literals multiline', () => {
   it('template literal on two lines', () => {
