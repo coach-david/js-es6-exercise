@@ -2,7 +2,7 @@
 
 describe('arrow functions', () => {
   // To do: replace regular function declarations with arrow functions. Make the functions as short as possible!
-  // Make sure all tests keep working, leave the asserts unchanged.
+  // Make sure all tests keep working, leave the expect lines unchanged.
   it('shorter to write', () => {
     const func = function() {};
 
@@ -41,7 +41,7 @@ describe('arrow functions', () => {
 
 describe('arrow functions - lexical scope', () => {
   // To do: replace regular function declarations with arrow functions where needed to make all tests work.
-  // Leave the asserts unchanged.
+  // Leave the expect lines unchanged.
 
   it('"this" comes from the surrounding lexical context, an object DOESN\'T create a new scope', () => {
     const person = {

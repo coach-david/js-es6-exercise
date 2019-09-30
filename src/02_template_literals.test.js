@@ -1,5 +1,5 @@
 // to do: Change "templateString" in every test, make use of template literals.
-// Make all tests pass, leave the asserts unchanged.
+// Make all tests pass, leave the expect lines unchanged.
 
 // 02.1: template literals basics
 
