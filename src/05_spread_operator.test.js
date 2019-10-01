@@ -1,6 +1,6 @@
 // To do: Fix the unit tests, leave the expect lines unchanged.
 
-// 04.1: Spread syntax
+// 05.1: Spread syntax
 
 describe('Spread syntax', () => {
   it('expands the items of an array by prefixing it with `...`', () => {
@@ -34,7 +34,7 @@ describe('Spread syntax', () => {
   });
 });
 
-// 04.2: Rest syntax
+// 05.2: Rest syntax
 
 describe('Rest syntax', () => {
   it('collect remaining items', () => {
@@ -61,7 +61,7 @@ describe('Rest syntax', () => {
   });
 });
 
-// 04.3: Rest + Spread
+// 05.3: Rest + Spread
 
 describe('Combining Rest and Spread', () => {
   it('both use `...` to either expand all items and collect them', () => {
@@ -79,7 +79,7 @@ describe('Combining Rest and Spread', () => {
   });
 });
 
-// 04.4: Rest & Spread for objects
+// 05.4: Rest & Spread for objects
 
 describe('Rest & Spread for objects', () => {
   it('merge 2 objects', () => {
