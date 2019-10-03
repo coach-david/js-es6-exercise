@@ -6,9 +6,11 @@
   "author": "David <david.vangompel@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "serve": "^11.2.0"
   },
   "scripts": {
-    "test": "jest --watch --noStackTrace "
+    "test": "jest --watch --noStackTrace ",
+    "saga": "serve -s ./"
   }
 }

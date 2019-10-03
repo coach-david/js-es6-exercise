@@ -65,7 +65,6 @@ describe('destructuring arrays makes shorter code', () => {
 
 describe('destructuring objects', () => {
   const person = { name: 'John', age: 30, location: 'Antwerp' };
-  const KEY = 'age';
 
   it('extract value from object', () => {
     let name = person;
@@ -102,6 +101,7 @@ describe('destructuring objects', () => {
   });
 
   it('extract value from object with a dynamic key', () => {
+    const KEY = 'age';
     // Requirement: Use the KEY variable defined above
     let personAge = person;
 
