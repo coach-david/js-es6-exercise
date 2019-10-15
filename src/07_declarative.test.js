@@ -20,7 +20,7 @@ const hiddenIdentities = ['Hulk', 'Spider-Man', 'Darkwing Duck'];
 
 describe('Declarative programming', () => {
   it('Give me a list with heroes stronger than "500"', () => {
-    let result = [];
+    const result = [];
 
     for (let i = 0; i < heroes.length; i++) {
       if (heroes[i].strength >= 500) {
@@ -38,7 +38,7 @@ describe('Declarative programming', () => {
   });
 
   it('Give me a list of all hero names', () => {
-    let result = [];
+    const result = [];
 
     for (let i = 0; i < heroes.length; i++) {
       result.push(heroes[i].name);
@@ -59,7 +59,7 @@ describe('Declarative programming', () => {
   });
 
   it('Give me a list of all hero names and whether they have a hidden identity', () => {
-    let result = [];
+    const result = [];
 
     for (let i = 0; i < heroes.length; i++) {
       result.push({
