@@ -66,61 +66,54 @@ console.log('-- Exercise 9 --');
 
 console.log('-- Exercise 10 --');
 {
-  const array = ['Light Amplification', 'by the Stimulated Emission', 'of Radiation'];
-
-  console.log('\tMake a new array from "array", but with all words as separate items: ');
-}
-
-console.log('-- Exercise 11 --');
-{
   const array = [10, 8, 30, 6, 7, 100, 45];
 
   console.log('\tAre all values in "array" bigger than 5?');
 }
 
-console.log('-- Exercise 12 --');
+console.log('-- Exercise 11 --');
 {
   const array = ['apple', 'banana', 'cherry', 'kiwi'];
 
   console.log('\tDoes the array contains the fruit "cherry"?');
 }
 
-console.log('-- Exercise 13 --');
+console.log('-- Exercise 12 --');
 {
   const array = ['apple', 'banana', 'cherry', 'kiwi'];
 
   console.log('\tDoes the array contains the fruit "banana", after the third element ("cherry")?');
 }
 
-console.log('-- Exercise 14 --');
+console.log('-- Exercise 13 --');
 {
   const array = ['apple', 'banana', 'cherry', 'kiwi'];
 
   console.log('\tPrint the first 2 items in "array":');
 }
 
-console.log('-- Exercise 15 --');
+console.log('-- Exercise 14 --');
 {
   const array = ['apple', 'banana', 'cherry', 'kiwi'];
 
   console.log('\tGive me all but the last element from "array":');
 }
 
-console.log('-- Exercise 16 --');
+console.log('-- Exercise 15 --');
 {
   const array = ['kiwi', 'banana', 'cherry', 'apple'];
 
   console.log('\tSort "array" alphabetically:');
 }
 
-console.log('-- Exercise 17 --');
+console.log('-- Exercise 16 --');
 {
   const array = ['kiwi', 'banana', 'cherry', 'apple'];
 
   console.log('\tWhat is the last item in "array"?');
 }
 
-console.log('-- Exercise 18 --');
+console.log('-- Exercise 17 --');
 {
   const array = ['Jan', 'Feb', 'April', 'May'];
 
