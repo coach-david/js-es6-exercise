@@ -1,9 +1,13 @@
 Using yarn:
 
-1. `yarn`
-2. `yarn test src/04_destructuring.test.js`
+```sh
+yarn
+yarn test src/01_var_let_const.test.js
+```
 
 Using npm:
 
-1. `npm install`
-2. `npm test -- src/04_destructuring.test.js`
+```sh
+npm install
+npm test -- src/01_var_let_const.test.js
+```
