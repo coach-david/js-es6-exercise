@@ -4,14 +4,14 @@
 
 describe('destructuring arrays makes shorter code', () => {
   it('extract value from array', () => {
-    let firstValue = [1];
+    const firstValue = [1];
 
     // don't change ↓
     expect(firstValue).toEqual(1);
   });
 
   it('extract multiple values from array', () => {
-    let firstValue,
+    const firstValue,
       secondValue = [1, 2, 3, 4];
 
     // don't change ↓
@@ -21,7 +21,7 @@ describe('destructuring arrays makes shorter code', () => {
 
   it('extract multiple, non successive, values from array', () => {
     // Requirement: Don't create new variables
-    let firstValue,
+    const firstValue,
       fourthValue = [1, 2, 3, 4];
 
     // don't change ↓
@@ -30,7 +30,7 @@ describe('destructuring arrays makes shorter code', () => {
   });
 
   it('extract remaining values from array', () => {
-    let firstValue,
+    const firstValue,
       secondValue,
       restValue = [1, 2, 3, 4];
 
@@ -43,7 +43,7 @@ describe('destructuring arrays makes shorter code', () => {
   it('extract nested values from array', () => {
     const person = [['John', 'Doe'], 'Antwerp', 30]; // ← don't change
 
-    let firstName,
+    const firstName,
       lastName,
       age = person;
 
@@ -52,7 +52,7 @@ describe('destructuring arrays makes shorter code', () => {
   });
 
   it('chained assignment', () => {
-    let a,
+    const a,
       b = c,
       d = [1, 2];
 
@@ -67,14 +67,14 @@ describe('destructuring objects', () => {
   const person = { name: 'John', age: 30, location: 'Antwerp' };
 
   it('extract value from object', () => {
-    let name = person;
+    const name = person;
 
     // don't change ↓
     expect(name).toEqual('John');
   });
 
   it('extract multiple values from object', () => {
-    let name,
+    const name,
       age = person;
 
     // don't change ↓
@@ -85,7 +85,7 @@ describe('destructuring objects', () => {
   it('extract nested values from object', () => {
     const person = { name: { firstName: 'John', lastName: 'Doe' }, age: 30, location: 'Antwerp' }; // ← don't change
 
-    let firstName,
+    const firstName,
       lastName,
       age = person;
 
@@ -94,7 +94,7 @@ describe('destructuring objects', () => {
   });
 
   it('extract value from object with an alias', () => {
-    let personLocation = person;
+    const personLocation = person;
 
     // don't change ↓
     expect(personLocation).toEqual('Antwerp');
@@ -103,7 +103,7 @@ describe('destructuring objects', () => {
   it('extract value from object with a dynamic key', () => {
     const KEY = 'age';
     // Requirement: Use the KEY variable defined above
-    let personAge = person;
+    const personAge = person;
 
     // don't change ↓
     expect(personAge).toEqual(30);
@@ -144,7 +144,7 @@ describe('destructuring function parameters', () => {
 
 describe('destructuring default values', () => {
   it('for a missing array value', () => {
-    let b = [1, , 3];
+    const b = [1, , 3];
 
     // don't change ↓
     expect(b).toEqual(2);
@@ -153,7 +153,7 @@ describe('destructuring default values', () => {
   it('for a missing object value', () => {
     const person = { name: 'John', age: 30 }; // ← don't change
 
-    let location = person;
+    const location = person;
 
     // don't change ↓
     expect(location).toEqual('Belgium');
@@ -201,7 +201,7 @@ describe('destructuring default values', () => {
 
 describe('destructuring final', () => {
   it('swapping variables', () => {
-    let a = 1,
+    const a = 1,
       b = 2; // ← don't change
 
     // to do: swap a and b in 1 line!
@@ -217,7 +217,7 @@ describe('destructuring final', () => {
       { name: { firstName: 'Jane', lastName: 'Doe' }, age: 27 },
     ]; // ← don't change
 
-    let firstNamePersonA,
+    const firstNamePersonA,
       firstNamePersonB,
       age = people;
 
@@ -231,7 +231,7 @@ describe('destructuring final', () => {
   it('extract value from nested array in object', () => {
     const person = { name: 'Louis', cats: ['Bruno', 'Mikado'] }; // ← don't change
 
-    let secondCat = person;
+    const secondCat = person;
 
     // don't change ↓
     const result = "Louis' second cat is Mikado";
