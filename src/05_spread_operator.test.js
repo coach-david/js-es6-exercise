@@ -52,9 +52,9 @@ describe('Rest syntax', () => {
   });
 
   it('rest syntax to collect subset of arguments', () => {
-    const multiply = (multiplier, ...rest) => {
+    const multiply = (multiplier, rest) => {
       expect(multiplier).toEqual(2);
-      expect(rest).toEqual([8, 9]);
+      expect(rest).toEqual([8, 9, 6]);
     };
 
     multiply(2, 8, 9, 6);
