@@ -11,7 +11,7 @@ describe('destructuring arrays makes shorter code', () => {
   });
 
   it('extract multiple values from array', () => {
-    const firstValue,
+    let firstValue,
       secondValue = [1, 2, 3, 4];
 
     // don't change ↓
@@ -21,7 +21,7 @@ describe('destructuring arrays makes shorter code', () => {
 
   it('extract multiple, non successive, values from array', () => {
     // Requirement: Don't create new variables
-    const firstValue,
+    let firstValue,
       fourthValue = [1, 2, 3, 4];
 
     // don't change ↓
@@ -30,7 +30,7 @@ describe('destructuring arrays makes shorter code', () => {
   });
 
   it('extract remaining values from array', () => {
-    const firstValue,
+    let firstValue,
       secondValue,
       restValue = [1, 2, 3, 4];
 
@@ -43,7 +43,7 @@ describe('destructuring arrays makes shorter code', () => {
   it('extract nested values from array', () => {
     const person = [['John', 'Doe'], 'Antwerp', 30]; // ← don't change
 
-    const firstName,
+    let firstName,
       lastName,
       age = person;
 
@@ -52,7 +52,7 @@ describe('destructuring arrays makes shorter code', () => {
   });
 
   it('chained assignment', () => {
-    const a,
+    let a,
       b = c,
       d = [1, 2];
 
@@ -74,7 +74,7 @@ describe('destructuring objects', () => {
   });
 
   it('extract multiple values from object', () => {
-    const name,
+    let name,
       age = person;
 
     // don't change ↓
@@ -85,7 +85,7 @@ describe('destructuring objects', () => {
   it('extract nested values from object', () => {
     const person = { name: { firstName: 'John', lastName: 'Doe' }, age: 30, location: 'Antwerp' }; // ← don't change
 
-    const firstName,
+    let firstName,
       lastName,
       age = person;
 
@@ -201,7 +201,7 @@ describe('destructuring default values', () => {
 
 describe('destructuring final', () => {
   it('swapping variables', () => {
-    const a = 1,
+    let a = 1,
       b = 2; // ← don't change
 
     // to do: swap a and b in 1 line!
@@ -217,7 +217,7 @@ describe('destructuring final', () => {
       { name: { firstName: 'Jane', lastName: 'Doe' }, age: 27 },
     ]; // ← don't change
 
-    const firstNamePersonA,
+    let firstNamePersonA,
       firstNamePersonB,
       age = people;
 
